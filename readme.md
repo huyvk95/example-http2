@@ -23,3 +23,5 @@ A challenge password []:
 # now let's create the .crt file
 
 ssl/: $ openssl x509 -req -sha256 -days 365 -in server.csr -signkey server.key -out server.crt
+
+if error NET::ERR_CERT_INVALID, type thisisunsafe at anywhere in chrome
